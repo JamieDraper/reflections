@@ -1,0 +1,51 @@
+1. How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+---
+
+I didn't have to check each line for discrancies myself.
+It was:
+1. Faster
+2. Undoubtedly more accurate
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+---
+
+If I break my code somehow I can easily skip back to a previous working version.
+I can them compare the two files to see where I went wrong.
+This would massively speed up the debugging process.
+
+--Commit--
+Each commit should have a single logical change
+One purpose
+
+Its a snapshot of every file in your repo for each time you make a commit.
+
+A repo is a collection of files that are tracked as a cohesive unit by git
+
+2. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+---
+Each version is likely to make more sense. 
+Con- If you don't commit for a while you may miss out on a version inbetween
+
+3. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+---
+Git is intended for programming, where changes in files can effect other documents, programs are built up holistically. Google docs you're just working on one thing at a time in an isoolated context, usually.
+
+
+
+4. How can you use the commands git log and git diff to view the history of files?
+----
+
+You can get commit id's off each version using diff.
+THEN, run diff with id's to see difference bettween two versions
+
+git checkout - resetting all files to a previous version.
+
+
+5. How might using version control make you more confident to make changes that could break something?
+---
+You can experiment without fear of doing irreversable damage. You can always revert to a previous state, prior to experimentation.
+
+5. Now that you have your workspace set up, what do you want to try using Git for?
+---
+I want to use it for building my FCC site with
